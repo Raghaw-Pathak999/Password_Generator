@@ -1,0 +1,122 @@
+/* Styling for the entire body */
+body {
+    background-color: #3b3939;
+}
+
+/* Styling for the main container */
+.container {
+    padding: 20px;
+    width: 50%;
+    height: 350px;
+    background-color: goldenrod;
+    margin: auto;
+    border-radius: 20px;
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    animation: bounce 1.5s ease infinite;
+}
+
+/* Styling for a secondary heading (h3) */
+h3 {
+    text-align: center;
+    color: rgb(103, 48, 0);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+/* Bounce animation for h1 */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Styling for the output password input field */
+.OutputPass {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: black;
+}
+
+/* Styling for the container of Generate and Copy-Passcode buttons */
+.Two_button {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for Generate and Copy-Passcode buttons */
+.Two_button > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background: #d4ff5f;
+    font-weight: bold;
+}
+
+/* Hover effect for buttons */
+.Two_button > button:hover {
+    scale: 1.1;
+    border: black 1.5px solid;
+    color: #d4ff5f;
+    background-color: rgb(67, 66, 66);
+}
+
+/* Styling for the password length input and label */
+.Length {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Length > input {
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 10px;
+    height: 10px;
+    padding: 10px;
+    width: 30px;
+    font-weight: bold;
+}
+
+.Length > label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the first row of checkboxes */
+.rowOne {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+/* Styling for the second row of checkboxes */
+.rowTwo {
+    display: flex;
+    justify-content: space-around;
+}

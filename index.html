@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator..!</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Container for the entire content -->
+    <div class="container">
+
+        <!-- Main heading of the page -->
+        <h1>Password Generator</h1>
+        <!-- Input field to display generated passwords -->
+        <input class="OutputPass" type="text" readonly placeholder="Here Showing Your Password" id="outputPassword">
+
+        <!-- Container for two buttons: Generate and Copy-Passcode -->
+        <div class="Two_button">
+            <button onclick="generatePassword()">Generate</button>
+            <button onclick="copyToClipboard()">Copy-Passcode</button>
+        </div>
+
+        <!-- Container for password length input -->
+        <div class="Length">
+            <label for="passwordLength">Password Length:</label>
+            <!-- Input field for specifying the password length -->
+            <input type="number" id="passwordLength" min="1" value="8">
+        </div>
+
+        <!-- Container for the first row of checkboxes -->
+        <div class="rowOne">
+            <!-- Checkbox for adding uppercase letters -->
+            <label>
+                <input type="checkbox" id="uppercaseCheckbox"> ADD Uppercase Letters
+            </label>
+
+            <!-- Checkbox for adding lowercase letters -->
+            <label>
+                <input type="checkbox" id="lowercaseCheckbox"> ADD Lowercase Letters
+            </label>
+        </div>
+        
+        <!-- Container for the second row of checkboxes -->
+        <div class="rowTwo">
+            <!-- Checkbox for adding numbers -->
+            <label>
+                <input type="checkbox" id="numberCheckbox"> ADD Numbers
+            </label>
+
+            <!-- Checkbox for adding symbols -->
+            <label>
+                <input type="checkbox" id="symbolCheckbox"> ADD Symbols
+            </label>
+        </div>
+
+        <!-- Heading to instruct the user to select at least one option -->
+        <h3>Select Any ONE TO Generate..!</h3>
+
+    <!-- Link to external JavaScript file for scripting functionality -->
+    <script src="./index.js"></script>
+</body>
+</html>
